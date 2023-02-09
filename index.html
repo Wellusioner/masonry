@@ -8,33 +8,27 @@
 		<meta name="description" content="">
 		<title>Masonry with Infinite Scroll</title>
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
-		<style>
 
-			/* reveal grid after images loaded */
+		<!-- Style of Masonry Gallery with Infinite Scroll starts -->
+		<style>
 			.grid.are-images-unloaded {
 				opacity: 0;
 			}
-	
-			/* .grid-item, */
 			.grid__col-sizer {
 				width: 32%;
 			}
-	
-			.grid__gutter-sizer { width: 2%; }
-	
-			/* hide by default */
+			.grid__gutter-sizer { 
+				width: 2%; 
+			}
 			.grid.are-images-unloaded .image-grid__item {
 				opacity: 0;
 			}
-	
 			.page-load-status {
 				display: none;
 				padding-top: 20px;
-				/* border-top: 1px solid #DDD; */
 				text-align: center;
 				color: #777;
 			}
-	
 			.loader-ellips {
 				font-size: 20px;
 				position: relative;
@@ -42,7 +36,6 @@
 				height: 1em;
 				margin: 10px auto;
 			}
-	
 			.loader-ellips__dot {
 				display: block;
 				width: 1em;
@@ -54,7 +47,6 @@
 				animation-timing-function: ease;
 				animation-iteration-count: infinite;
 			}
-	
 			.loader-ellips__dot:nth-child(1),
 			.loader-ellips__dot:nth-child(2) {
 				left: 0;
@@ -84,11 +76,83 @@
 				animation-name: reveal;
 				animation-direction: reverse;
 			}
-	
 		</style>
+		<!-- Style of Masonry Gallery with Infinite Scroll ends -->
+
   </head>
   <body>
-		<div class="container">
+		<div class="container py-5">
+
+			<!-- Masonry Gallery HTML starts -->
+			<div class="masonry_testimonials row">
+				<div class="grid-item col-sm-6 col-lg-4 mb-4">
+					<div class="card">
+						<img class="card-img-top" src="http://at.al/legacy/img/lioz_testimonial.png" alt="">
+					</div>
+				</div>
+				<div class="grid-item col-sm-6 col-lg-4 mb-4">
+					<div class="card">
+						<img src="http://at.al/legacy/img/lioz_testimonial.png">
+					</div>
+				</div>
+				<div class="grid-item col-sm-6 col-lg-4 mb-4">
+					<div class="card">
+						<img src="https://newstart.live/masonry_grid/masonry_grid2.png">
+					</div>
+				</div>
+				<div class="grid-item col-sm-6 col-lg-4 mb-4">
+					<div class="card">
+						<img src="https://newstart.live/masonry_grid/masonry_grid3.png">
+					</div>
+				</div>
+				<div class="grid-item col-sm-6 col-lg-4 mb-4">
+					<div class="card">
+						<img src="http://at.al/legacy/img/random_whats_test.png">
+					</div>
+				</div>
+				<div class="grid-item col-sm-6 col-lg-4 mb-4">
+					<div class="card">
+						<img src="https://newstart.live/masonry_grid/masonry_grid5.png">
+					</div>
+				</div>
+				<div class="grid-item col-sm-6 col-lg-4 mb-4">
+					<div class="card">
+						<img src="https://newstart.live/masonry_grid/masonry_grid6.png">
+					</div>
+				</div>
+				<div class="grid-item col-sm-6 col-lg-4 mb-4">
+					<div class="card">
+						<img src="https://newstart.live/masonry_grid/masonry_grid7.png">
+					</div>
+				</div>
+				<div class="grid-item col-sm-6 col-lg-4 mb-4">
+					<div class="card">
+						<img src="http://at.al/legacy/img/lioz_testimonial.png">
+					</div>
+				</div>
+				<div class="grid-item col-sm-6 col-lg-4 mb-4">
+					<div class="card">
+						<img src="https://newstart.live/masonry_grid/masonry_grid8.png">
+					</div>
+				</div>
+				<div class="grid-item col-sm-6 col-lg-4 mb-4">
+					<div class="card">
+						<img src="https://newstart.live/masonry_grid/masonry_grid8.png">
+					</div>
+				</div>
+				<div class="grid-item col-sm-6 col-lg-4 mb-4">
+					<div class="card">
+						<img src="https://newstart.live/masonry_grid/masonry_grid8.png">
+					</div>
+				</div>
+				<div class="grid-item col-sm-6 col-lg-4 mb-4">
+					<div class="card">
+						<img src="https://newstart.live/masonry_grid/masonry_grid8.png">
+					</div>
+				</div>
+		</div>
+		<!-- Masonry Gallery HTML ends -->
+
 			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, itaque? Reiciendis qui magni, quo accusamus accusantium facilis error! Pariatur nulla harum rerum hic sint qui similique ullam minus eveniet officia! 
 				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi cumque hic reprehenderit, maiores, ut error temporibus magni neque sapiente nesciunt quasi accusantium ducimus, cum minima accusamus aut inventore exercitationem adipisci?</p>
 			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, itaque? Reiciendis qui magni, quo accusamus accusantium facilis error! Pariatur nulla harum rerum hic sint qui similique ullam minus eveniet officia! 
@@ -112,6 +176,8 @@
 		</div>
 		<main>
 			<div class="container" style="max-width: 1400px;">
+
+				<!-- Masonry Gallery with Infinite Scroll starts -->
 				<div class="masonry-gallery row wh_testimonials ">
 					<div class="grid-item col-sm-6 col-lg-4 mb-4">
 						<div class="card">
@@ -154,15 +220,36 @@
 					<p class="infinite-scroll-last"></p>
 					<p class="infinite-scroll-error"></p>
 				</div>
+				<!-- Masonry Gallery with Infinite Scroll ends -->
+
 			</div>
 		</main>
 
 
-		<!-- Adding custom script start -->
+		<!-- Adding custom script starts -->
 
 		<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
 		<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
 		<script src="https://unpkg.com/infinite-scroll@4/dist/infinite-scroll.pkgd.min.js"></script>
+
+		<!-- Adding custom script ends -->
+
+
+		<!-- Masonry Gallery starts -->
+		<script>
+			let testimonals = document.querySelector('.masonry_testimonials');
+			const masonryGallery = imagesLoaded( testimonals, function() {
+				new Masonry( testimonals, {
+					itemSelector: '.grid-item',
+					percentPosition: true,
+					// columnWidth: '.grid-sizer',
+				});
+			});
+		</script>
+		<!-- Masonry Gallery end -->
+
+
+		<!-- Masonry Gallery with Infinite Scroll starts -->
 		<script>
 			let grid = document.querySelector('.masonry-gallery');
 
@@ -173,7 +260,7 @@
 				hiddenStyle: { transform: 'translateY(100px)', opacity: 0 },
 			});
 
-			imagesLoaded( grid, function() {
+			const infiniteGallery = imagesLoaded( grid, function() {
 				grid.classList.remove('are-images-unloaded');
 				msnry.options.itemSelector = '.grid-item';
 				let items = grid.querySelectorAll('.grid-item');
@@ -197,15 +284,8 @@
 			});
 
 		</script>
+		<!-- Masonry Gallery with Infinite Scroll ends -->
+
+
   </body>
 </html>
-
-  <!-- <script>
-    imagesLoaded( '.masonry-gallery', function(){
-      const elem = document.querySelector('.masonry-gallery'); 
-      const msnry = new Masonry( elem, { 
-        itemSelector: '.grid-item', 
-        percentPosition: true
-      }); 
-    });
-  </script> -->
